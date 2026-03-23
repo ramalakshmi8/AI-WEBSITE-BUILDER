@@ -6,7 +6,7 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyB9M3xPNsBMCoU7UJFp7PPUosmxy34I1es",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "genwebai-ccea1.firebaseapp.com",
   projectId: "genwebai-ccea1",
   storageBucket: "genwebai-ccea1.firebasestorage.app",
