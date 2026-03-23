@@ -1,0 +1,59 @@
+# ======================
+# 🔐 ENV FILES (CRITICAL)
+# ======================
+.env
+.env.*
+client/.env
+server/.env
+
+# ======================
+# 📦 NODE MODULES
+# ======================
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# ======================
+# 🧾 LOG FILES
+# ======================
+logs
+*.log
+
+# ======================
+# 🗂️ BUILD FILES
+# ======================
+dist/
+build/
+client/build/
+client/dist/
+
+# ======================
+# ⚙️ CACHE
+# ======================
+.cache/
+.vite/
+.next/
+
+# ======================
+# 💻 OS FILES
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# 🔧 IDE FILES
+# ======================
+.vscode/
+.idea/
+
+# ======================
+# 🧪 TEST
+# ======================
+coverage/
+
+# ======================
+# 🧠 AI PROJECT FILES
+# ======================
+generated/
+uploads/
+temp/
