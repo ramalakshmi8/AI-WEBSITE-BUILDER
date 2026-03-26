@@ -27,21 +27,40 @@ export const stripeWebhook = async (req, res) => {
     const credits = Number(session.metadata?.credits || 0);
     const plan = session.metadata?.plan;
 
-    if (!userId) {
-      return res.status(400).json({ message: "Invalid metadata" });
-    }
+    // if (!userId) {
+    //   return res.status(400).json({ message: "Invalid metadata" });
+    // }
 
-    try {
-      await User.findByIdAndUpdate(userId, {
-        $inc: { credits },
-        plan,
-      });
+    // try {
+    //   await User.findByIdAndUpdate(userId, {
+    //     $inc: { credits },
+    //     plan,
+    //   });
 
-      console.log("✅ Credits updated:", userId);
-    } catch (err) {
-      console.log("❌ DB error:", err);
-      return res.status(500).json({ message: "DB error" });
-    }
+    //   console.log("✅ Credits updated:", userId);
+    // } catch (err) {
+    //   console.log("❌ DB error:", err);
+    //   return res.status(500).json({ message: "DB error" });
+    // }
+    console.log("🔥 WEBHOOK HIT");
+
+if (event.type === "checkout.session.completed") {
+  const session = event.data.object;
+
+  console.log("SESSION:", session);
+  console.log("METADATA:", session.metadata);
+
+  const userId = session.metadata?.userId;
+  const credits = Number(session.metadata?.credits || 0);
+
+  console.log("Updating user:", userId, credits);
+
+  await User.findByIdAndUpdate(userId, {
+    $inc: { credits },
+  });
+
+  console.log("✅ Credits updated");
+}
   }
 
   return res.status(200).json({ received: true });
