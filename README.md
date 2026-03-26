@@ -76,3 +76,11 @@ MONGO_URI=your_mongo_connection_string
 JWT_SECRET=your_jwt_secret
 STRIPE_SECRET_KEY=your_stripe_secret_key
 FRONTEND_URL=http://localhost:3000
+
+# Start backend server
+cd server
+npm run dev
+
+# Start frontend
+cd client
+npm start
