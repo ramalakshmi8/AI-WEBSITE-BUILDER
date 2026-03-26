@@ -4,9 +4,12 @@ import Home from "./pages/Home.jsx";
 import useGetCurrentUser from "./hooks/useGetCurrentUser.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import Generate from "./pages/Generate.jsx";
+import WebsiteEditor from "./pages/Editor.jsx";
+import LiveSite from "./pages/LiveSite.jsx";
 
 import { useSelector } from "react-redux";
-import Editor from "./pages/Editor.jsx";
+import Pricing from "./pages/Pricing.jsx";
+
 export const serverUrl = "http://localhost:8000";
 const App = () => {
   useGetCurrentUser();
@@ -16,18 +19,23 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-      </Routes>
-      <Routes>
+
         <Route
           path="/dashboard"
           element={userData ? <Dashboard /> : <Home />}
         />
-      </Routes>
-      <Routes>
+
         <Route path="/generate" element={userData ? <Generate /> : <Home />} />
-      </Routes>
-      <Routes>
-        <Route path="/editor/:id" element={userData ? <Editor /> : <Home />} />
+
+        <Route
+          path="/editor/:id"
+          element={userData ? <WebsiteEditor /> : <Home />}
+        />
+
+        <Route path="/site/:id" element={<LiveSite />} />
+
+        {/* <Route path="/site/:id" element={<LiveSite />} /> */}
+        <Route path="/pricing" element={<Pricing />} />
       </Routes>
     </BrowserRouter>
   );
