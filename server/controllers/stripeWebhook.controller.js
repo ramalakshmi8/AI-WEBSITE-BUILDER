@@ -6,7 +6,7 @@ export const stripeWebhook = async (req, res) => {
   let event;
 
   try {
-    event = stripe.webhook.constructEvent(req.body, sig, STRIPE_WEBHOOK_SECRET);
+    event = stripe.webhooks.constructEvent(req.body, sig, STRIPE_WEBHOOK_SECRET);
   } catch (error) {
     console.log(error);
     res.status(500).json({ message: "webhook error" });
