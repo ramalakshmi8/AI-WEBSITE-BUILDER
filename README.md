@@ -89,8 +89,7 @@ npm start
 ## 💳 Payment Integration
 
 - Stripe Checkout for purchasing credits  
-- Webhooks update user credits automatically after successful payments  
-
+- Webhooks update user credits automatically after successful payments
 ---
 
 ## 🚀 Deployment Flow
@@ -99,4 +98,29 @@ npm start
 2. AI generates the website code  
 3. Backend deploys the website to Render or similar hosting  
 4. User receives a live URL instantly  
-5. Credits are automatically deducted  
+5. Credits are automatically deducted
+
+
+## ⚡ Usage Flow
+
+1. Sign up and log in  
+2. Buy credits using Stripe Checkout  
+3. Enter your website idea  
+4. AI generates the website automatically  
+5. Click **Deploy** → get live URL instantly  
+6. Credits are deducted  
+
+---
+
+## 📈 Future Improvements
+
+- Industry-specific AI templates  
+- Analytics dashboard for deployed websites  
+- Multi-user collaboration  
+- Advanced drag-and-drop styling  
+
+---
+
+## 👨‍💻 Contributing
+
+Open an issue or submit a pull request for bug fixes or improvements. All contributions are welcome!
