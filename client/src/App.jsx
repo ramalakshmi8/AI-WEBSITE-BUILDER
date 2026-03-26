@@ -10,7 +10,7 @@ import LiveSite from "./pages/LiveSite.jsx";
 import { useSelector } from "react-redux";
 import Pricing from "./pages/Pricing.jsx";
 
-export const serverUrl = "http://localhost:8000";
+export const serverUrl = "https://ai-website-builder-it5f.onrender.com";
 const App = () => {
   useGetCurrentUser();
   const { userData } = useSelector((state) => state.user);
