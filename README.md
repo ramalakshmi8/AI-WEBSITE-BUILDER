@@ -84,3 +84,18 @@ npm run dev
 # Start frontend
 cd client
 npm start
+
+## 💳 Payment Integration
+
+- Stripe Checkout for purchasing credits  
+- Webhooks update user credits automatically after successful payments  
+
+---
+
+## 🚀 Deployment Flow
+
+1. User enters a website idea prompt  
+2. AI generates the website code  
+3. Backend deploys the website to Render or similar hosting  
+4. User receives a live URL instantly  
+5. Credits are automatically deducted  
