@@ -13,10 +13,8 @@ const LiveSite = () => {
     const handleGetWebsite = async () => {
       try {
         const website = await axios.get(
-          `${serverUrl}/api/website/get-by-slug/${id}`,
-          {
-            withCredentials: true,
-          },
+          `${serverUrl}/api/website/get-by-slug/${id}`
+       
         );
         console.log(website);
         setHtml(website.data.latestCode);
