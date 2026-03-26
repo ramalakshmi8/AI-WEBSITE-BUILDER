@@ -65,3 +65,14 @@ npm install
 # Install backend dependencies
 cd ../server
 npm install
+
+### Environment Variables
+
+Create a `.env` file inside the `server` folder with the following content:
+
+```env
+PORT=5000
+MONGO_URI=your_mongo_connection_string
+JWT_SECRET=your_jwt_secret
+STRIPE_SECRET_KEY=your_stripe_secret_key
+FRONTEND_URL=http://localhost:3000
