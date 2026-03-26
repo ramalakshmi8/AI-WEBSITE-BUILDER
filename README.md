@@ -53,3 +53,27 @@ Try it live here: [https://ai-website-builder-1-c4i0.onrender.com](https://ai-we
 ```bash
 git clone https://github.com/your-username/ai-website-builder.git
 cd ai-website-builder
+Install dependencies:
+# Frontend
+cd client
+npm install
+
+# Backend
+cd ../server
+npm install
+
+Create a .env file in the server folder:
+PORT=5000
+MONGO_URI=your_mongo_connection_string
+JWT_SECRET=your_jwt_secret
+STRIPE_SECRET_KEY=your_stripe_secret_key
+FRONTEND_URL=http://localhost:3000
+
+Run the development servers:
+# Backend
+cd server
+npm run dev
+
+# Frontend
+cd client
+npm start
