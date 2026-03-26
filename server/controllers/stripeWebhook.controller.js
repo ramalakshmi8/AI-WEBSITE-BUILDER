@@ -1,5 +1,6 @@
 import stripe from "../config/stripe.js";
 import User from "../models/user.model.js";
+const STRIPE_WEBHOOK_SECRET = process.env.STRIPE_WEBHOOK_SECRET;
 
 export const stripeWebhook = async (req, res) => {
   const sig = req.headers["stripe-signature"];
