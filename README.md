@@ -84,6 +84,7 @@ npm run dev
 # Start frontend
 cd client
 npm start
+```
 
 ## 💳 Payment Integration
 
