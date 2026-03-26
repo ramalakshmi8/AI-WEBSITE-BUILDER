@@ -5,26 +5,31 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Stripe](https://img.shields.io/badge/Stripe-635BFF?style=for-the-badge&logo=stripe&logoColor=white)
 ![Render](https://img.shields.io/badge/Render-6E40E1?style=for-the-badge&logo=render&logoColor=white)
+![AI](https://img.shields.io/badge/AI-powered-orange?style=for-the-badge)
+![Credits](https://img.shields.io/badge/Credit-System-yellow?style=for-the-badge)
 
-**AI Website Builder** is an AI-powered SaaS platform that automatically generates websites and deploys them **in one click**. It includes a **credit-based system, secure Stripe payments, authentication, and production deployment**.
+**AI Website Builder** is an AI-powered SaaS platform that **generates websites automatically and deploys them with one click**. It comes with a credit system, Stripe payments, authentication, and production-ready deployment.
 
 ---
 
 ## 🌐 Live Demo
 
-Try it live here: [https://ai-website-builder-1-c4i0.onrender.com](https://ai-website-builder-1-c4i0.onrender.com)
+[Try it live!](https://ai-website-builder-1-c4i0.onrender.com)
+
+![Live Demo GIF](https://media.giphy.com/media/3o7TKxqAoH8w2wnYju/giphy.gif)  
+*Demo GIF placeholder – replace with your actual GIF recording of AI generating and deploying websites*
 
 ---
 
 ## 🔥 Features
 
-- **AI Website Generation:** Describe your idea → AI generates fully functional websites.
+- **AI Website Generation:** Describe your idea → AI builds a fully functional website.
 - **One-Click Deployment:** Instantly deploy websites with a live URL.
-- **Credit-Based System:** Each website generation consumes user credits.
-- **Stripe Payment Integration:** Secure credit purchase with real-time updates via webhooks.
+- **Credit-Based System:** Each generation consumes user credits.
+- **Stripe Payment Integration:** Buy credits securely via Stripe.
 - **Premium Animations:** Smooth UI powered by Framer Motion.
-- **Authentication & Protected Routes:** User accounts with JWT authentication.
-- **Production Deployment:** Frontend + backend hosted on Render Cloud.
+- **Authentication & Protected Routes:** User accounts with JWT auth.
+- **Production Deployment:** Frontend + backend hosted on Render.
 
 ---
 
@@ -41,78 +46,22 @@ Try it live here: [https://ai-website-builder-1-c4i0.onrender.com](https://ai-we
 
 ### Prerequisites
 
-- Node.js (v18+)
+- Node.js v18+
 - MongoDB (local or Atlas)
-- Stripe account (for payments)
-- Render account (optional, for deployment)
+- Stripe account
+- Render account (optional)
 
 ### Installation
 
-1. Clone the repository:
-
-
+```bash
+# Clone repository
 git clone https://github.com/your-username/ai-website-builder.git
 cd ai-website-builder
-Install dependencies:
-# Frontend
+
+# Install frontend dependencies
 cd client
 npm install
 
-# Backend
+# Install backend dependencies
 cd ../server
 npm install
-
-Create a .env file in the server folder:
-PORT=5000
-MONGO_URI=your_mongo_connection_string
-JWT_SECRET=your_jwt_secret
-STRIPE_SECRET_KEY=your_stripe_secret_key
-FRONTEND_URL=http://localhost:3000
-
-Run the development servers:
-# Backend
-cd server
-npm run dev
-
-# Frontend
-cd client
-npm start
-
-💳 Payment Integration
-Stripe Checkout is used for credit purchases.
-Webhooks ensure real-time credit updates after successful payments.
-
-🚀 Deployment Flow
-User enters a website idea prompt.
-AI generates the website code.
-Backend deploys the code to Render (or similar hosting).
-User receives a live URL instantly.
-Credits are automatically deducted.
-
-🗂 Project Structure
-ai-website-builder/
-├─ client/           # React frontend
-├─ server/           # Node.js backend
-├─ models/           # MongoDB models
-├─ routes/           # Express routes
-├─ controllers/      # Business logic
-├─ utils/            # Helpers (AI generation, deployment, etc.)
-└─ README.md
-
-⚡ Usage Flow
-Sign up and log in.
-Buy credits using Stripe Checkout.
-Enter your website idea.
-AI generates the website automatically.
-Click Deploy → get live URL instantly.
-Credits are deducted from your account.
-
-📈 Future Improvements
-Industry-specific AI templates
-Analytics dashboard for deployed websites
-Multi-user collaboration
-Advanced drag-and-drop styling
-
-👨‍💻 Contributing
-
-Contributions are welcome! Open an issue or submit a pull request for bug fixes, improvements, or new features.
