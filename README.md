@@ -50,7 +50,7 @@ Try it live here: [https://ai-website-builder-1-c4i0.onrender.com](https://ai-we
 
 1. Clone the repository:
 
-```bash
+
 git clone https://github.com/your-username/ai-website-builder.git
 cd ai-website-builder
 Install dependencies:
@@ -77,3 +77,42 @@ npm run dev
 # Frontend
 cd client
 npm start
+
+💳 Payment Integration
+Stripe Checkout is used for credit purchases.
+Webhooks ensure real-time credit updates after successful payments.
+
+🚀 Deployment Flow
+User enters a website idea prompt.
+AI generates the website code.
+Backend deploys the code to Render (or similar hosting).
+User receives a live URL instantly.
+Credits are automatically deducted.
+
+🗂 Project Structure
+ai-website-builder/
+├─ client/           # React frontend
+├─ server/           # Node.js backend
+├─ models/           # MongoDB models
+├─ routes/           # Express routes
+├─ controllers/      # Business logic
+├─ utils/            # Helpers (AI generation, deployment, etc.)
+└─ README.md
+
+⚡ Usage Flow
+Sign up and log in.
+Buy credits using Stripe Checkout.
+Enter your website idea.
+AI generates the website automatically.
+Click Deploy → get live URL instantly.
+Credits are deducted from your account.
+
+📈 Future Improvements
+Industry-specific AI templates
+Analytics dashboard for deployed websites
+Multi-user collaboration
+Advanced drag-and-drop styling
+
+👨‍💻 Contributing
+
+Contributions are welcome! Open an issue or submit a pull request for bug fixes, improvements, or new features.
