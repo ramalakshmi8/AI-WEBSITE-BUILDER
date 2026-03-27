@@ -208,7 +208,7 @@ const Home = () => {
               <motion.div
                 key={w._id}
                 whileHover={{ y: -6 }}
-                onClick={() => navigate("/editor/${w._id")}
+               onClick={() => navigate(`/editor/${w._id}`)}
                 className="cursor-pointer rounded-2xl bg-white/5 border border-white/10 overflow-hidden"
               >
                 <div className="h-40 bg-black">
