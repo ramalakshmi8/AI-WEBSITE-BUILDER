@@ -16,8 +16,8 @@
 
 [Try it live!](https://ai-website-builder-1-c4i0.onrender.com)
 
-![Live Demo GIF](https://media.giphy.com/media/3o7TKxqAoH8w2wnYju/giphy.gif)  
-*Demo GIF placeholder – replace with your actual GIF recording of AI generating and deploying websites*
+![Live Demo](https://your-domain.com/demo.gif)  
+*Watch AI generate and deploy a full website in seconds 🚀*
 
 ---
 
