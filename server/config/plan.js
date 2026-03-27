@@ -7,11 +7,11 @@
 //   {
 //     plan: "pro",
 //     price: 499,
-//     credits: 1000,
+//     credits: 500,
 //   },
 //   {
 //     plan: "enterprise",
-//     price: 1499,
+//     price: 1000,
 //     credits: "Unlimited",
 //   },
 // ];
